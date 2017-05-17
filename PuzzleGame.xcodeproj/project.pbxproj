@@ -13,6 +13,10 @@
 		9CFDA55E1ECBB1B9004E917E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFDA55C1ECBB1B9004E917E /* Main.storyboard */; };
 		9CFDA5601ECBB1B9004E917E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFDA55F1ECBB1B9004E917E /* Assets.xcassets */; };
 		9CFDA5631ECBB1B9004E917E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFDA5611ECBB1B9004E917E /* LaunchScreen.storyboard */; };
+		9CFDA56C1ECBB1F5004E917E /* PuzzleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFDA56B1ECBB1F5004E917E /* PuzzleService.m */; };
+		9CFDA5701ECBB685004E917E /* PuzzleGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFDA56F1ECBB685004E917E /* PuzzleGameView.m */; };
+		9CFDA5741ECBC389004E917E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFDA5731ECBC389004E917E /* Utils.m */; };
+		9CFDA5781ECBDD58004E917E /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFDA5771ECBDD58004E917E /* UICountingLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		9CFDA55F1ECBB1B9004E917E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFDA5621ECBB1B9004E917E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFDA5641ECBB1B9004E917E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFDA56A1ECBB1F5004E917E /* PuzzleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleService.h; sourceTree = "<group>"; };
+		9CFDA56B1ECBB1F5004E917E /* PuzzleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleService.m; sourceTree = "<group>"; };
+		9CFDA56E1ECBB685004E917E /* PuzzleGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleGameView.h; sourceTree = "<group>"; };
+		9CFDA56F1ECBB685004E917E /* PuzzleGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleGameView.m; sourceTree = "<group>"; };
+		9CFDA5721ECBC389004E917E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		9CFDA5731ECBC389004E917E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		9CFDA5761ECBDD58004E917E /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		9CFDA5771ECBDD58004E917E /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		9CFDA5521ECBB1B9004E917E /* PuzzleGame */ = {
 			isa = PBXGroup;
 			children = (
+				9CFDA56D1ECBB328004E917E /* PuzzleService */,
 				9CFDA5561ECBB1B9004E917E /* AppDelegate.h */,
 				9CFDA5571ECBB1B9004E917E /* AppDelegate.m */,
 				9CFDA5591ECBB1B9004E917E /* ViewController.h */,
@@ -77,6 +90,29 @@
 				9CFDA5541ECBB1B9004E917E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CFDA56D1ECBB328004E917E /* PuzzleService */ = {
+			isa = PBXGroup;
+			children = (
+				9CFDA5711ECBC308004E917E /* Utils */,
+				9CFDA56A1ECBB1F5004E917E /* PuzzleService.h */,
+				9CFDA56B1ECBB1F5004E917E /* PuzzleService.m */,
+				9CFDA56E1ECBB685004E917E /* PuzzleGameView.h */,
+				9CFDA56F1ECBB685004E917E /* PuzzleGameView.m */,
+			);
+			name = PuzzleService;
+			sourceTree = "<group>";
+		};
+		9CFDA5711ECBC308004E917E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CFDA5761ECBDD58004E917E /* UICountingLabel.h */,
+				9CFDA5771ECBDD58004E917E /* UICountingLabel.m */,
+				9CFDA5721ECBC389004E917E /* Utils.h */,
+				9CFDA5731ECBC389004E917E /* Utils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFDA5701ECBB685004E917E /* PuzzleGameView.m in Sources */,
 				9CFDA55B1ECBB1B9004E917E /* ViewController.m in Sources */,
+				9CFDA56C1ECBB1F5004E917E /* PuzzleService.m in Sources */,
+				9CFDA5781ECBDD58004E917E /* UICountingLabel.m in Sources */,
+				9CFDA5741ECBC389004E917E /* Utils.m in Sources */,
 				9CFDA5581ECBB1B9004E917E /* AppDelegate.m in Sources */,
 				9CFDA5551ECBB1B9004E917E /* main.m in Sources */,
 			);

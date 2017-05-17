@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "PuzzleService.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) PuzzleService *puzzleService;
 @end
 
 @implementation ViewController
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.puzzleService = [[PuzzleService alloc] initForView:self.view];
 }
 
 
